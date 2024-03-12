@@ -54,7 +54,7 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 97.3%;
+    width: 97.2%;
 }
 
 .social-links {
@@ -82,4 +82,48 @@ footer {
 
 .telegram {
     background-image: url('./img/telegram_logo.ico');
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #DAF7A6;
+    border-radius: 25px 25px 0 0;
+    background-color: #150329;
+    margin-top: 10px;
+}
+
+.project {
+    width: 450px;
+    padding: 10px;
+    border: 3px solid #DAF7A6;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.5s;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #150329;
+    margin-top: 10px;
+}
+
+.project:hover {
+    background-color: #DAF7A6;
+    color: #150329;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 25px;
 }
