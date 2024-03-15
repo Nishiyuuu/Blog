@@ -1,1 +1,1 @@
-# Blog
+https://nishiyuuu.github.io/Blog/
