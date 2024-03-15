@@ -15,7 +15,98 @@
             <a class="link" href="/Blog/pages/projects.html">Projects</a>
             <a class="link" href="/Blog/pages/contact.html">Contact</a></div>
     </nav>
+    <div class="content">
+        <div class="menu">
+            <a href="#section0">0. Introduction</a>
+            <a href="#section1">1. Pygame</a>
+            <a href="#section1.1">1.1. Description of the Pygame Library</a>
+            <a href="#section1.2">1.2. Key Components of Pygame</a>
+            <a href="#section1.3">1.3. Using Pygame</a>
+            <a href="#section1.4">1.4. Popularity of Pygame Among Programmers</a>
+            <a href="#section2">2. Installing Pygame</a>
+            <a href="#section2.1">2.1. Installing Python</a>
+            <a href="#section2.2">2.2. Installing Pygame</a>
+            <a href="#section2.3">2.3. Creating a New Project</a>
+            <a href="#section2.4">2.4. Game Loop</a>
+            <a href="#section3">3. Results and Conclusion</a>
+            <a href="#section3.1">3.1. Results</a>
+            <a href="#section4">4. Conclusion</a>
+        </div>
+        <div class="text">
+            <h2 id="section0">Introduction</h2>
+            <p>"Goose Game with GoIT" is my first 2D video game that I developed during a free Python marathon at the GoIT school. During this marathon, we learned the basics of Python programming language syntax and how to integrate other libraries into our projects. The library used for developing the video game is called "Pygame." It is quite popular among beginners in game development as it provides a straightforward syntax and clear documentation.</p>
+            <h2 id="section1">Pygame</h2>
+            <p></p>
+            <h2 id="section1.1">Description of the Pygame Library</h2>
+            <p>Pygame is a library for programming games in the Python programming language. It provides a powerful and simple interface for creating 2D games and interactive applications. Pygame is based on the SDL (Simple DirectMedia Layer) library and gives Python access to its functionality through a convenient API.</p>
+            <h2 id="section1.2">Key Components of Pygame</h2>
+            <p>- Graphics module: Pygame offers extensive graphics capabilities, allowing you to create windows, display images, create animations, manage colors, and textures.</p>
+            <p>- Sound module: Pygame enables the use of sounds and music in your game.</p>
+            <p>- Event handling module: Pygame provides convenient functions for handling events such as key presses, mouse clicks, window resizing, and more.</p>
+            <p>- Animation and effects module: Pygame allows you to create various visual effects and animations for your game.</p>
+            <p>- Time management module: Pygame lets you control time in your game.</p>
 
+            <h2 id="section1.3">Using Pygame</h2>
+            <p>- Initializing Pygame: The first step in using Pygame is to initialize the library and create essential objects such as the game window.</p>
+            <p>- Creating game objects: You create various objects for your game, such as characters, items, enemies, etc.</p>
+            <p>- Event handling and player interaction: Pygame allows you to handle user input and respond to player interaction with the game.</p>
+            <p>- Animation and effects: You can create various animation and sound effects for your game.</p>
+            <p>- Game loop: Pygame uses a game loop for continuous updating of the game state and displaying new frames on the screen.</p>
+            <h2 id="section1.4">Popularity of Pygame Among Programmers</h2>
+            <p>Pygame is very popular among programmers because it provides a convenient and powerful toolkit for creating various games and interactive applications. It is suitable for beginners in game development as well as experienced developers looking for a quick and efficient way to create games in Python.</p>
+            <h2 id="section2">Installing Pygame</h2>
+            <h2 id="section2.1">Installing Python</h2>
+            <p>- It is recommended to use the latest version of Python for the best compatibility with Pygame.</p>
+            <p>- Install Python from the official website: <code><a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></code></p>
+            <h2 id="section2.2">Installing Pygame</h2>
+            <p>After installing Python, install the Pygame library using the pip package manager: <code>$ pip install pygame</code></p>
+            <h2 id="section2.3">Creating a New Project</h2>
+            <p>- After installing Pygame, create a folder for your project and import Pygame into your Python script: <code>import pygame</code></p>
+            <p>- Initialize Pygame to start working with it: <code>pygame.init()</code></p>
+            <p>- Create the game window: <code>screen = pygame.display.set_mode((width, height))</code></p>
+            <h2 id="section2.4">Game Loop</h2>
+            <p>- Create the main game loop to handle events, update the game state, and display frames.</p>
+            <code>
+                <pre>while running:</pre> 
+                <pre>    for event in pygame.event.get():</pre>
+                <pre>        if event.type == pygame.QUIT:</pre>
+                <pre>            running = False</pre>
+                <pre>pygame.display.flip()</pre> 
+            </code>
+            <h2 id="section3">Results and Conclusion</h2>
+            <h2 id="section3.1">Results</h2>
+            <p>After completing the development of the "Goose Game with GoIT," the following results were achieved:
+                <p>1. Creation of a first 2D video game: Successfully created a full-fledged 2D video game, which is a first experience in game development using the Python programming language and the Pygame library.</p>
+                <p>2. Programming and design skills: Gained valuable practical experience in programming in Python and in developing graphical design, object interaction, and game environment interaction during game development.</p>
+                <p>3. Using the Pygame library: Mastered the use of the Pygame library for creating graphical games, animations, and handling user events.</p>
+            </p>
+            <h2 id="section4">Conclusion</h2>
+            <p>The process of developing the "Goose Game with GoIT" was a significant step in learning and practically applying programming and game development knowledge. Using the Pygame library allowed creating an interesting and attractive game with unique gameplay.
+            This project not only showcased my programming skills but also helped understand the fundamental principles of game development and influenced my desire to grow in this field. Such experience is crucial for my future professional growth and success in the game development industry.</p>
+            <pre><p class="text1">15.03.2024</p></pre>
+            <pre> </pre>
+            <pre>  </pre>
+            <pre>  </pre>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuLinks = document.querySelectorAll('.menu a');
+            
+            menuLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1); 
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                        menuLinks.forEach(link => link.classList.remove('active'));
+                        this.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
     <footer class="social-list1">
         <div class="social-links">
             <a href="https://www.instagram.com/wlad_bitchkovskij/" target="_blank"><div class="circle instagram"></div></a>
