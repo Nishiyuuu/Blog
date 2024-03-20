@@ -206,12 +206,31 @@ h2 {
     background-color: #150329;
 }
 
-input[type="text"] {
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    border: 2px solid #DAF7A6;
+.box-search {
     border-radius: 30px;
-    background-color: #150329;
-    color: #fff;
-    
+    padding: 10px 20px; 
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid #DAF7A6;
+    background-color: #DAF7A6;
+    color: #150329;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 10px;
+    width: 300px;
+}
+
+input {
+    border: none;
+    background-color: #DAF7A6;
+    border-radius: 30px;
+    width: 100%;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: #150329;
+    font-weight: bold;
 }
