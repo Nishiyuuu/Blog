@@ -23,6 +23,5 @@ function loadRecentProjects() {
             });
         }
     };
-
     xhr.send();
 }
